@@ -16,7 +16,6 @@ permissions:
   id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -33,18 +32,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Step 2: Configures GitHub Pages, enabling it if not already enabled
+      # Step 2: Configures GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # This will automatically enable GitHub Pages if it's not already
-          enablement: true
 
       # Step 3: Uploads your site files as an artifact that GitHub can use for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the entire repository (since your index.html is in the root)
+          # Upload the entire repository
           path: '.'
 
       # Step 4: Deploys the uploaded artifact to GitHub Pages
