@@ -28,8 +28,5 @@ Access live site at:
 
 ---
 
-## 🛠️ How to Use
-
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/AjinkyaP-09/gh-deployment-workflow-.git
+## Repository URL
+[https://github.com/AjinkyaP-09/gh-deployment-workflow-](https://github.com/AjinkyaP-09/gh-deployment-workflow-)
