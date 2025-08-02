@@ -13,7 +13,7 @@ This repository contains the source code for the **Sendmate** static landing pag
 
 ## 🚀 Deployment Workflow
 
-This project uses a GitHub Actions workflow defined in `.github/workflows/deploy.yml`.
+This project uses a GitHub Actions workflow defined in `.github/workflows/main.yml`.
 
 The workflow is triggered on every push to the `main` branch and performs the following steps:
 
@@ -24,8 +24,7 @@ The workflow is triggered on every push to the `main` branch and performs the fo
 
 🔗 **Live Website:**  
 Access your live site at:  
-`https://<your-username>.github.io/<your-repo-name>/`  
-*(Replace with your actual GitHub username and repo name.)*
+`[https://ajinkyap-09.github.io/gh-deployment-workflow/](https://ajinkyap-09.github.io/gh-deployment-workflow-/)`  
 
 ---
 
@@ -33,4 +32,4 @@ Access your live site at:
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/AjinkyaP-09/gh-deployment-workflow-.git
