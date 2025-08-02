@@ -3,186 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sendmate - Your Parcel Delivery Partner</title>
-    
+    <title>Welcome to Sendmate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
     <style>
-        /* Basic Reset and Body Styles  */
-        * {
-            box-sizing: border-box;
+        /* Basic Reset and Body Styles */
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-        }
-
-        body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f7f6;
             color: #333;
-            line-height: 1.6;
         }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header / Navigation Bar */
-        header {
-            background-color: #ffffff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav {
+        /* Flexbox container to center content */
+        body {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column; /* Stack container and footer */
+            justify-content: center;
             align-items: center;
+            text-align: center;
+            padding: 20px;
         }
-
+        /* Main content box */
+        .container {
+            max-width: 650px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        /* Logo styling */
         .logo {
-            font-size: 1.8rem;
+            font-size: 2.8rem;
             font-weight: 700;
-            color: #2a7aed; /* A nice blue color */
+            color: #2a7aed;
+            margin-bottom: 1rem;
         }
-
-        .nav-button {
+        /* Description text */
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+        /* Main call-to-action button */
+        .main-button {
+            display: inline-block;
             background-color: #2a7aed;
             color: #fff;
-            padding: 0.6rem 1.2rem;
+            padding: 1rem 2.5rem;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             font-weight: 600;
-            transition: background-color 0.3s ease;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-
-        .nav-button:hover {
+        .main-button:hover {
             background-color: #1e63c2;
+            transform: translateY(-3px);
         }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1585713181935-d5f622cc261b?q=80&w=2070') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 6rem 0;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .features h2 {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
-        }
-
-        .features-grid {
-            display: flex;
-            justify-content: space-around;
-            gap: 2rem;
-            flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
-        }
-
-        .feature-card {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            flex-basis: 30%; /* Each card takes up about 30% of the container width */
-            min-width: 280px;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            color: #2a7aed;
-            margin-bottom: 1rem;
-        }
-
-        /* Footer */
+        /* Footer styling */
         footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+            position: absolute;
+            bottom: 20px;
         }
-
     </style>
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Sendmate</div>
-                <a href="#" class="nav-button">Login / Sign Up</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Fast, Reliable, Simple.</h1>
-                <p>Sendmate is your trusted partner for sending parcels anywhere. We offer seamless booking, real-time tracking, and secure delivery for all your needs.</p>
-                <a href="#" class="nav-button">Send a Parcel Now</a>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="container">
-                <h2>Why Choose Sendmate?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>Real-Time Tracking</h3>
-                        <p>Know exactly where your parcel is at every moment with our live tracking system, from pickup to delivery.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Affordable Pricing</h3>
-                        <p>Get the best rates for local and nationwide delivery. No hidden fees, just transparent and fair pricing.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Secure & Insured</h3>
-                        <p>Your peace of mind is our priority. Every parcel is handled with care and is insured against loss or damage.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="container">
+        <div class="logo">SendMate</div>
+        <p>
+            <strong>SendMate</strong> is a comprehensive parcel delivery web application designed to streamline the process of sending and receiving packages. Our platform offers a user-friendly interface for customers and delivery partners, featuring real-time tracking, parcel management, and much more.
+        </p>
+        <!-- This button links to your main application hosted on Render -->
+        <a href="https://sendmate.onrender.com" class="main-button" target="_blank" rel="noopener noreferrer">Launch SendMate App</a>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Sendmate. All Rights Reserved. Pune, Maharashtra, India.</p>
-        </div>
+        😊
     </footer>
 
 </body>
