@@ -23,8 +23,8 @@ The workflow is triggered on every push to the `main` branch and performs the fo
 4. **Deploy:** The artifact is deployed to the `gh-pages` environment, making the site live.
 
 🔗 **Live Website:**  
-Access your live site at:  
-`[https://ajinkyap-09.github.io/gh-deployment-workflow/](https://ajinkyap-09.github.io/gh-deployment-workflow-/)`  
+Access live site at:  
+[https://ajinkyap-09.github.io/gh-deployment-workflow/](https://ajinkyap-09.github.io/gh-deployment-workflow-/)
 
 ---
 
