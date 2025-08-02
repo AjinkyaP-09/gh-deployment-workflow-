@@ -33,9 +33,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Step 2: Configures GitHub Pages
+      # Step 2: Configures GitHub Pages, enabling it if not already enabled
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # This will automatically enable GitHub Pages if it's not already
+          enablement: true
 
       # Step 3: Uploads your site files as an artifact that GitHub can use for deployment
       - name: Upload artifact
